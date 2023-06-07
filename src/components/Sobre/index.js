@@ -39,10 +39,10 @@ function Sobre({ name, empresa, faculdade, cargo, universidade, sobre, id }){
                             </li>
                         </ul>
                     </div>
-                    <div className={styles.containerInfo}>
+                    <div className={styles.containerInfoEmpresa}>
                         <h3>Experiência</h3>
                         <p>Cargo Atual: {cargo}</p>
-                        <p>Experiência: Desenvolvedor Web</p>
+                        <p>Experiência: Desenvolvedor Front end</p>
                     </div>
 
                 </section>
