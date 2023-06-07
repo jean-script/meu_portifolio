@@ -1,0 +1,22 @@
+
+
+.container {
+    margin-top: 20px;
+}
+
+.projetos {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+
+   gap: 20px;
+}
+
+@media screen and (max-width:1300px) { 
+
+    .projetos {
+        justify-content: center;
+    }   
+
+}   

@@ -1,0 +1,125 @@
+
+
+.sectionSobre {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.sectionSobre article {
+    background-color:rgba(6,43,69,0.6980392156862745) ;
+    padding: 20px 10px;
+    border-radius: 4px;
+}
+
+.infor {
+    width: 760px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sobreContatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+
+.photo {
+    width: 150px;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.photo:hover{
+    box-shadow: 4px 4px 20px rgba(103, 214, 231, 0.263);
+}
+
+.contatos{
+    width:150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contatos img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.nome {
+    color: #fff;
+    font-size: 18px;
+    margin: 10px 0px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.infor section {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.containerInfo {
+    color: #fff;
+    font-size: 16px;
+}
+
+.containerInfo h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: #67d5e7;
+}
+
+.infor hr {
+    width: 95%;
+    margin: 10px auto;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 10px;
+    text-align: justify;
+}
+
+.sobre h3 {
+    color:#67d5e7;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.sobre p {
+    line-height: 135%;
+}
+
+@media screen and (max-width: 800px) {
+   .infor section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+   }
+}
+
+@media screen and (max-width: 750px){
+    .sectionSobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infor {
+        width: 100%;
+    }
+}
