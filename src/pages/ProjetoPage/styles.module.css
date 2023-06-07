@@ -46,7 +46,7 @@ hr {
 }
 
 .paragrafo {
-    width: 600px;
+    max-width: 600px;
     text-align: justify;
     line-height: 150%;
     margin-bottom: 10px;
@@ -70,3 +70,11 @@ span {
     gap: 10px;
 }
 
+@media screen and (max-width:900px){
+    .descricao {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
