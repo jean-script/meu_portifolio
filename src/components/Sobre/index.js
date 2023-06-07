@@ -41,7 +41,8 @@ function Sobre({ name, empresa, faculdade, cargo, universidade, sobre, id }){
                     </div>
                     <div className={styles.containerInfo}>
                         <h3>Experiência</h3>
-                        <p>Cargo Atual: {cargo} - {empresa}</p>
+                        <p>Cargo Atual: {cargo}</p>
+                        <p>Experiência: Desenvolvedor Web</p>
                     </div>
 
                 </section>

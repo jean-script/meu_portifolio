@@ -14,8 +14,7 @@ export default function Header(){
                 <nav className={styles.nav}>
                     <a href='#sobre' target='_self' className={styles.link}>Sobre</a>
                     <a href='#projetos' target='_self' className={styles.link}>Projetos</a>
-                    <a href='#sobre' target='_self' className={styles.link}>Certificados</a>
-                    <Link to="/new" className={styles.link}>New</Link>
+                    <a href='#sobre' target='_self' className={styles.link}>Tecnologia</a>
                 </nav>
             </div>
 

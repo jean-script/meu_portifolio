@@ -1,13 +1,19 @@
 import { BrowserRouter } from 'react-router-dom';
 import RoutesApp from './routes';
 
-import Header from './components/Header'
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+import ProjetosProvider from './contexts/Projects';
 
 function App() {
   return (
     <BrowserRouter>
-      <Header/>
-      <RoutesApp/>
+      <ProjetosProvider>
+        <Header/>
+        <RoutesApp/>
+        <Footer/>
+      </ProjetosProvider>
     </BrowserRouter>
   );
 }

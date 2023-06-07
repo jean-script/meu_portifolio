@@ -3,21 +3,22 @@
 .sectionSobre {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     gap: 10px;
 }
 
 .sectionSobre article {
-    background-color:rgba(6,43,69,0.6980392156862745) ;
+    background-color:#062b4589 ;
     padding: 20px 10px;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 .infor {
-    width: 760px;
+    width: 1000px;
     display: flex;
     flex-direction: column;
+    min-height: 370px;
 
 }
 
@@ -25,16 +26,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
+    width: 300px;
+    min-height: 370px;
 }
 
 .photo {
-    width: 150px;
+    width: 170px;
+    background-color: transparent;
+    height: 180px;
+    border-radius: 100px;
 }
 
 .photo img {
     width: 100%;
-    border-radius: 5px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 100px;
+    background-color: transparent;
 }
 
 .photo:hover{
@@ -62,17 +70,22 @@
     gap: 10px;
 }
 
+.nome h3 {
+    font-weight: 300;
+}
+
 
 .infor section {
-    padding: 10px;
+    padding: 10px 30px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    /* align-items: center; */
+    justify-content: space-between;
 }
 
 .containerInfo {
     color: #fff;
     font-size: 16px;
+    font-weight: 300;
 }
 
 .containerInfo h3{
@@ -92,13 +105,13 @@
     color: #fff;
     gap: 10px;
     text-align: justify;
+    font-weight: 300;
 }
 
 .sobre h3 {
     color:#67d5e7;
     font-size: 25px;
-    font-weight: 600;
-    text-align: left;
+    font-weight: 500;
 }
 
 .sobre p {
@@ -113,7 +126,7 @@
    }
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 950px){
     .sectionSobre {
         flex-direction: column;
         align-items: center;
@@ -121,5 +134,10 @@
 
     .infor {
         width: 100%;
+    }
+
+    .sectionSobre article {
+        background-color: transparent;
+        
     }
 }
