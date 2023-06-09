@@ -21,10 +21,7 @@ export default function ProjetosPage(){
                 {projeto.map((projeto)=>{
                     return (
                         <div className={styles.center}>
-                            <div>
-                                <img src={projeto.image} alt={projeto.nome} className={styles.img}/>
-                            </div>                         
-
+                                            
                             <div className={styles.info}>
                                 <hr className={styles.linhaTitle}/>
                                 <h1 className={styles.title}>{projeto.nome}</h1>
@@ -42,6 +39,9 @@ export default function ProjetosPage(){
                                 </article>
                             </div>
                             <hr/>
+                            <div>
+                                <img src={projeto.image} alt={projeto.nome} className={styles.img}/>
+                            </div> 
                         </div>
                     )
                 })}
