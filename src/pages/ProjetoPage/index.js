@@ -37,7 +37,17 @@ export default function ProjetosPage(){
                                 </article>
                             </div>
                             <hr/>
-                            <div>
+                            
+                            {projeto.tecnologias &&(
+                                <>
+                                    <div id='tecnologia'>
+                                        <h1 className={styles.titleTecnologias}>Tecnologias</h1>
+                                        {projeto.tecnologias.join(', ')}
+                                    </div>
+                                    <hr/>  
+                                </>
+                            )}
+                            <div id='projetos'>
                                 <img src={projeto.image} alt={projeto.nome} className={styles.img}/>
                             </div> 
                         </div>

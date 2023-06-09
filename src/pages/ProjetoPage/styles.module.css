@@ -71,6 +71,10 @@ span {
     gap: 10px;
 }
 
+.titleTecnologias {
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width:900px){
     .descricao {
         width: 100%;

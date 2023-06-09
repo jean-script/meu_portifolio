@@ -29,7 +29,7 @@ function Home(){
                 </section>
             </div>
 
-            <div className={styles.competencias}>
+            <div className={styles.competencias} id="tecnologia">
                 <h2>Tecnologias</h2>
                 <Competencia/>
             </div>

@@ -17,12 +17,14 @@ function ProjetosProvider({ children }){
             git:'https://github.com/jean-script/sistema_chamada',
             image:chamados,
             link: 'https://chamadosuni.netlify.app/',
+            tecnologias: ['ReactJS', 'JavaScript', 'Firebase', 'HTML5', 'CSS'],
             id: 1
         },{
             nome: 'Lista de tarefas',
             descricao: 'Projeto onde o usuario pode criar uma conta e gerar suas tarefas. Todas as tarefas são salvas no banco de dados Firebase. Cada usuaria pode ter suas tarefas publicas e privadas. as publicas podem compartilhar com alguem que não tenha conta.',
             git:'https://github.com/jean-script/ListaDeTarefas',
             image:tarefa,
+            tecnologias: ['ReactJS', 'JavaScript', 'Firebase', 'HTML5', 'CSS'],
             id: 2
         },{
             nome: 'Ecommerce CasaVerde',
@@ -30,6 +32,7 @@ function ProjetosProvider({ children }){
             git:'https://github.com/jean-script/ecommerce',
             image:'https://github.com/jean-script/ecommerce/blob/main/src/img/localhost_3000_.png?raw=true/1200x500.png?text=#vitrinedev',
             link: 'https://ecommerce-flax-rho.vercel.app/',
+            tecnologias: ['ReactJS', 'JavaScript', 'Firebase', 'HTML5', 'CSS','Styles-components', 'EmailJS'],
             id: 3
         },{
             nome: 'Social Mídia',
@@ -37,6 +40,7 @@ function ProjetosProvider({ children }){
             git:'https://github.com/jean-script/social_midia',
             image:social,
             link: 'https://socials-midias.netlify.app/',
+            tecnologias: ['ReactJS', 'JavaScript', 'Firebase', 'HTML5', 'CSS'],
             id: 4
         }
     ]
