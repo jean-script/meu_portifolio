@@ -1,10 +1,10 @@
 import Photo from '../../asserts/myphoto.jpg'
 import { Link } from 'react-router-dom';
 
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import styles from './styles.module.css';
 
-function Sobre({ name, empresa, faculdade, cargo, universidade, sobre, id }){
+function Sobre({ name, faculdade, cargo, universidade, sobre }){
   
     return(
         <div className={styles.sectionSobre}>
