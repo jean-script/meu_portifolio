@@ -8,8 +8,6 @@ import styles from './styles.module.css';
 export default function ProjetosPage(){
 
     const { data } = useContext(ProjetosContext);
-
-
     const { id } = useParams();
     
     const projeto = data.filter(prop => (prop.id === Number(id)));
@@ -20,9 +18,9 @@ export default function ProjetosPage(){
             <div className={styles.center}>
                 {projeto.map((projeto)=>{
                     return (
-                        <div className={styles.center}>
+                        <div className={styles.center} key={projeto.id}>
                                             
-                            <div className={styles.info}>
+                            <div className={styles.info} id='sobre'>
                                 <hr className={styles.linhaTitle}/>
                                 <h1 className={styles.title}>{projeto.nome}</h1>
 
