@@ -39,7 +39,6 @@ function ProjetosProvider({ children }){
             descricao: 'Site é baseado em uma rede social, com sistema de autenticação, validação de usuário e cadastros. Praticando os conhecimentos em ReactJS, JavaScript, html, css, firebase, React hooks e context API. Neste projeto o usuário pode acessar sua conta ver os posts mais recentes, e poder publicar suas ideias escritas e com imagens. Tendo seu perfil com foto, baner, nome e um campo sobre para se apresentar. E cada usuario pode adicionar comentarios aos posts.',
             git:'https://github.com/jean-script/social_midia',
             image:social,
-            link: 'https://socials-midias.netlify.app/',
             tecnologias: ['ReactJS', 'JavaScript', 'Firebase', 'HTML5', 'CSS'],
             id: 4
         }
