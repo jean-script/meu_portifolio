@@ -1,0 +1,39 @@
+
+import tarefa from '../asserts/projetoTarefa.png'
+import chamados from '../asserts/sistemaDeChamados.JPG'
+
+export const data = 
+    [
+        {
+            nome: 'Sistema de Chamados',
+            descricao: 'Sistema com autenticação, para fazer chamadas de suporte, onde poder criar seu perfil, seus chamados e adicionar sua empresa.',
+            git:'https://github.com/jean-script/sistema_chamada',
+            image:chamados,
+            link: 'https://chamadosuni.netlify.app/',
+            tecnologias: ['ReactJS', 'JavaScript', 'Firebase', 'HTML5', 'CSS'],
+            id: 1
+        },{
+            nome: 'Shopping card',
+            descricao: 'Um site de loja de compras usando a api do mercado livre. Neste projeto temos o carinho de compras onde pode adicionar ou remover itens. Também conta com uma barra de pesquisa para buscar os produtos desejados.',
+            git:'https://github.com/jean-script/shopping_card',
+            image:'https://github.com/jean-script/shopping_card/raw/main/src/assets/imgGit.JPG?raw=true',
+            link: 'https://shopping-card-cyan.vercel.app/',
+            tecnologias: ['ReactJS', 'JavaScript', 'React hooks', 'context Api'],
+            id: 2
+        },{
+            nome: 'Lista de tarefas',
+            descricao: 'Projeto onde o usuario pode criar uma conta e gerar suas tarefas. Todas as tarefas são salvas no banco de dados Firebase. Cada usuaria pode ter suas tarefas publicas e privadas. as publicas podem compartilhar com alguem que não tenha conta.',
+            git:'https://github.com/jean-script/ListaDeTarefas',
+            image:tarefa,
+            tecnologias: ['ReactJS', 'JavaScript', 'Firebase', 'HTML5', 'CSS'],
+            id: 3
+        },{
+            nome: 'Ecommerce CasaVerde',
+            descricao: 'Landing page de ecommerce de Plantas. Praticando componentização do react, layout responsive, envio de email com javaScript e consumo de api',
+            git:'https://github.com/jean-script/ecommerce',
+            image:'https://github.com/jean-script/ecommerce/blob/main/src/img/localhost_3000_.png?raw=true/1200x500.png?text=#vitrinedev',
+            link: 'https://ecommerce-flax-rho.vercel.app/',
+            tecnologias: ['ReactJS', 'JavaScript', 'Firebase', 'HTML5', 'CSS','Styles-components', 'EmailJS'],
+            id: 4
+        }
+    ]
