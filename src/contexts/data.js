@@ -17,7 +17,7 @@ export const data =
         },
         {
             nome: 'Rede Social skate',
-            descricao: 'Landing page de ecommerce de Plantas. Praticando componentização do react, layout responsive, envio de email com javaScript e consumo de api',
+            descricao: 'Uma site como rede social de skatistas, contento melhores picos e produto.',
             git:'https://github.com/jean-script/RedeSocialskate',
             image:skate,
             link: 'https://jean-script.github.io/RedeSocialskate/',
