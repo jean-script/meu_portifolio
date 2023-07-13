@@ -6,12 +6,16 @@
     background-color:#0b2435;
     border-radius: 5px;
     padding: 20px;
+    max-width: 400px;
+    min-height: 310px;
 }
 
 .templateInfo {
     width: 100%;
     display: flex;
     gap: 10px;
+    max-width: 400px;
+    flex-direction: column;
 }
 
 .templateContainerImg {
@@ -33,9 +37,14 @@
     width: 100%;
 }
 
+.tecnologias {
+    color: #dbdbdb;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 .btns {
     width: 100%;
-    margin-top: 10px;
     display: flex;
 }
 

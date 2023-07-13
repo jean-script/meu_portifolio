@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import styles from './styles.module.css'
 
-export default function ProjetosTemplate({ nome, image, id, git }){
+export default function ProjetosTemplate({ nome, image, id, git, tecnologias }){
     return(
         <div className={styles.template}>
 
@@ -13,6 +13,8 @@ export default function ProjetosTemplate({ nome, image, id, git }){
 
                 <div className={styles.NameAndBtn}>
                     <h3 className={styles.title}>{nome}</h3>
+
+                    <span className={styles.tecnologias}>{tecnologias.join(", ")}</span>
 
                     <div className={styles.btns}>
                         <a 

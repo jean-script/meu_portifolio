@@ -21,6 +21,7 @@ const Projetos = () =>{
                             id={pro.id}
                             git={pro.git}
                             link={pro.link}
+                            tecnologias={pro.tecnologias}
                         />
                     </li>
                 )

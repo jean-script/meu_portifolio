@@ -9,7 +9,7 @@
     max-width: 1200px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     list-style: none;
     margin: 10px auto;
@@ -17,6 +17,7 @@
 
 .projetos li {
     width: 90%;
+    max-width: 400px;
     border: 1px solid rgba(103, 214, 231, 0.032);
     border-radius: 5px;
 }
@@ -36,7 +37,13 @@
 
 }   
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 870px){
+    .projetos {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 580px){
     .projetos {
         grid-template-columns: repeat(1,1fr);
     }
