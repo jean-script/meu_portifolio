@@ -3,6 +3,7 @@ import tarefa from '../asserts/projetoTarefa.png'
 import chamados from '../asserts/sistemaDeChamados.JPG';
 import lanchonete from '../asserts/lanchoneteDaPraca.png';
 import skate from '../asserts/redeSocialSkate.png';
+import devBarber from '../asserts/devBarber.png'
 
 export const data = 
     [
@@ -49,6 +50,15 @@ export const data =
             image:tarefa,
             tecnologias: ['ReactJS', 'JavaScript', 'Firebase', 'HTML5', 'CSS'],
             id: 3
+        },
+        {
+            nome: 'Dev Barbearia',
+            descricao: 'Lage page para uma barbearia',
+            git:'https://github.com/jean-script/lage-page-barber-dev',
+            image:devBarber,
+            link: 'https://jean-script.github.io/lage-page-barber-dev/',
+            tecnologias: ['html5', 'Sass', 'css', 'AOS animation'],
+            id: 7
         },
         {
             nome: 'Ecommerce CasaVerde',
