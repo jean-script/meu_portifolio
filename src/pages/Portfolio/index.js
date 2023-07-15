@@ -3,6 +3,7 @@ import Projetos from '../../components/Projetos';
 import styles from './styles.module.css';
 
 import { ProjetosContext } from '../../contexts/Projects'
+import Footer from '../../components/Footer';
 
 export default function Portifolio(){
 
@@ -17,6 +18,8 @@ export default function Portifolio(){
             <div>
                 <Projetos projetos={data} />
             </div>
+
+            <Footer/>
         </main>
     )
 }
