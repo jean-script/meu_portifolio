@@ -41,7 +41,7 @@ export default function Header(){
                         <FaUserAlt size={16} color='#1b4934' />
                         <span>Sobre mim</span>
                     </Link>
-                    <Link to='/'>
+                    <Link to='/portfolio'>
                         <FaTabletAlt size={16} color='#fff' />
                         <span>Portfólio</span>
                     </Link>

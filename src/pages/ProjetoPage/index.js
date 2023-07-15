@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import { ProjetosContext } from '../../contexts/Projects'
 
 import styles from './styles.module.css';
+import Footer from '../../components/Footer';
 
 export default function ProjetosPage(){
 
@@ -55,6 +56,8 @@ export default function ProjetosPage(){
                 })}
 
             </div>
+
+            <Footer/>
         </main>
     )
 }

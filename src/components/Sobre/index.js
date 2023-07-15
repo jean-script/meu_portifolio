@@ -19,7 +19,7 @@ function Sobre({ name, faculdade, cargo, universidade, sobre }){
                     </p>
 
                     <div>
-                        <Link to="/portifolio">
+                        <Link to="/portfolio">
                             <HiArrowCircleRight size={24} />
                             Exibir portifólio
                         </Link>

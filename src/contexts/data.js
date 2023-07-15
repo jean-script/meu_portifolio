@@ -14,7 +14,8 @@ export const data =
             image:lanchonete,
             link: 'https://lanchonete-praca.vercel.app/dashboard',
             tecnologias: ['NextJS','ReactJS', 'Firebase', 'html5', 'Sass'],
-            id: 5
+            id: 5,
+            destaque:true
         },
         {
             nome: 'Rede Social skate',
@@ -23,7 +24,8 @@ export const data =
             image:skate,
             link: 'https://jean-script.github.io/RedeSocialskate/',
             tecnologias: ['HTML5', 'CSS', 'JavaScript', 'Grid'],
-            id: 6
+            id: 6,
+            destaque:true
         },
         {
             nome: 'Sistema de Chamados',
@@ -32,7 +34,8 @@ export const data =
             image:chamados,
             link: 'https://chamadosuni.netlify.app/',
             tecnologias: ['ReactJS', 'JavaScript', 'Firebase', 'HTML5', 'CSS'],
-            id: 1
+            id: 1,
+            destaque:true
         },
         {
             nome: 'Shopping card',
@@ -58,7 +61,8 @@ export const data =
             image:devBarber,
             link: 'https://jean-script.github.io/lage-page-barber-dev/',
             tecnologias: ['html5', 'Sass', 'css', 'AOS animation'],
-            id: 7
+            id: 7,
+            destaque:true
         },
         {
             nome: 'Ecommerce CasaVerde',

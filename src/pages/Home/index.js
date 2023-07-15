@@ -9,11 +9,15 @@ import { ProjetosContext } from '../../contexts/Projects'
 import styles from './styles.module.css';
 import OqueFaco from "../../components/OqueFaco";
 import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
+import { HiArrowCircleRight } from "react-icons/hi";
 
 function Home(){
 
 
     const { userInfo } = useContext(ProjetosContext);
+    const { data } = useContext(ProjetosContext);
+    let projetosDestaque = data.filter((pro)=> pro.destaque === true);
 
     const [name] = useState(userInfo.nome);
     const [cargo] = useState(userInfo.cargo);
@@ -35,7 +39,16 @@ function Home(){
 
             <OqueFaco/>
 
-            <Projetos/>
+            <section className={styles.Container}>
+                <Projetos projetos={projetosDestaque}/>
+
+                <div className={styles.ViewProjects}>
+                    <Link to='/portfolio' >
+                        <HiArrowCircleRight size={20} />
+                        ver todos projetos
+                    </Link>
+                </div>
+            </section>
 
             <Footer/>
 

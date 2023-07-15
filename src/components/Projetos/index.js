@@ -1,12 +1,9 @@
 import ProjetosTemplate from '../ProjetoTemplate';
 import styles from './styles.module.css';
-import { useContext } from 'react';
+import { HiArrowCircleRight } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
-import { ProjetosContext } from '../../contexts/Projects';
-
-const Projetos = () =>{
-
-    const { data } = useContext(ProjetosContext);
+const Projetos = ({projetos}) =>{
 
     return(
         <article className={styles.container}>
@@ -18,7 +15,7 @@ const Projetos = () =>{
 
             <ul className={styles.projetos}>  
 
-            {data.map((pro)=>{
+            {projetos.map((pro)=>{
                 return(
                     <li key={pro.id}>
                         <ProjetosTemplate 
@@ -28,6 +25,7 @@ const Projetos = () =>{
                             git={pro.git}
                             link={pro.link}
                             tecnologias={pro.tecnologias}
+                            descricao={pro.descricao}
                         />
                     </li>
                 )
