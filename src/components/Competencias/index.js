@@ -25,7 +25,7 @@ const Competencia = ()=>{
 
             <div className={styles.tecnologia}>
                 <SiSass size={tamanhoIcon} color='#54B689'/>
-                <span>Firebase</span>
+                <span>Sass</span>
             </div>
 
             <div className={styles.tecnologia}>
@@ -50,7 +50,7 @@ const Competencia = ()=>{
             </div>
             <div className={styles.tecnologia}>
                 <IoLogoNodejs size={tamanhoIcon} color='#54B689' />
-                <span>NextJS</span>
+                <span>NodeJs</span>
             </div>
             <div className={styles.tecnologia}>
                 <FaPython size={tamanhoIcon} />
