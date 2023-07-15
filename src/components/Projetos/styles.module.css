@@ -9,7 +9,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-
     padding-top: 60px;
 }
 
@@ -35,7 +34,6 @@
     width: 100%;
     background-color: rgb(248, 252, 255);
     border: 1px solid rgb(235, 235, 236);
-    /* border-radius: 5px; */
 }
 
 
@@ -47,13 +45,20 @@
 
 }   
 
-@media screen and (max-width: 870px){
+@media screen and (max-width: 768px){
+    .container {
+        height: auto;
+    }
     .projetos {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
+        
     }
 }
 
 @media screen and (max-width: 580px){
+    .container {
+        height: auto;
+    }
     .projetos {
         grid-template-columns: repeat(1,1fr);
     }

@@ -73,4 +73,19 @@ p strong {
     object-fit: cover;
 }
 
+@media screen and (max-width:768px){
 
+    .sobreContainer {
+        height: auto;
+    }
+
+    .sobreInfos {
+        align-items: center;
+    }
+    
+    .sobreContainer article {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

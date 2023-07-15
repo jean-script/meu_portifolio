@@ -62,3 +62,17 @@
     font-size: 12px;
     line-height: 150%;
 }
+
+@media screen and (max-width:768px) {
+    .template {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .templateImg img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+}

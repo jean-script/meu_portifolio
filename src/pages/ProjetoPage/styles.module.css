@@ -83,7 +83,12 @@ span {
     color: var(--title-normal);
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:768px){
+    .main {
+        margin-left: 0;
+        margin-top: 260px;
+    }
+
     .descricao {
         width: 100%;
         flex-direction: column;
