@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import Home from '../pages/Home';
 import ProjetosPage from '../pages/ProjetoPage';
+import Erro from '../pages/Erro';
 
 
 function RoutesApp(){
@@ -11,6 +12,7 @@ function RoutesApp(){
 
             <Route path='/projeto/:id' element={ <ProjetosPage/> } />
             
+            <Route path='*' element={ <Erro/> } />
         </Routes>
     )
 }

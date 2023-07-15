@@ -1,3 +1,4 @@
+import { FaGithubAlt } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import styles from './styles.module.css'
 
@@ -20,7 +21,8 @@ export default function ProjetosTemplate({ nome, image, id, git, tecnologias }){
                         <a 
                             href={git} 
                             rel="noreferrer" target='_blank'>
-                            Acessar Git
+                                <FaGithubAlt color='#1b4934'/>
+                                Acessar Git
                         </a>
 
                         <Link to={`projeto/${id}`}>Detalhes</Link>

@@ -3,11 +3,12 @@
 
 .template {
     width: 100%;
-    background-color:#0b2435;
+    background-color:#54b688ad;
     border-radius: 5px;
-    padding: 20px;
+    /* padding: 20px; */
     max-width: 400px;
     min-height: 310px;
+    overflow: hidden;
 }
 
 .templateInfo {
@@ -28,8 +29,6 @@
     min-height: 120px;
     height: 100%;
     object-fit: contain;
-
-    border-radius: 5px;
 }
 
 .NameAndBtn {
@@ -37,10 +36,11 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    padding: 0 10px;
 }
 
 .tecnologias {
-    color: #dbdbdb;
+    color: var(--text-noraml);
     font-size: 14px;
     margin-top: 5px;
 }
@@ -48,21 +48,26 @@
 .btns {
     width: 100%;
     display: flex;
+    
 }
 
 .btns a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
     text-decoration: none;
-    color: #67d5e7;
-    width: 100px;
-    padding: 5px;
-    text-decoration: underline;
+    color: var(--primary-black);
+    width: 130px;
+    padding: 10px 0;
+    text-decoration: none;
     font-weight: 400;
 }
 
 .title {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #fff;
+    color: var(--write-normal);
 }
 
 @media screen and (max-width: 800px) {

@@ -10,6 +10,12 @@ const Projetos = () =>{
 
     return(
         <article className={styles.container}>
+
+            <div className={styles.ProjetoCabecalho}>
+                <div className={styles.barraCor}></div>
+                <h2>Projetos em destaque</h2>
+            </div>
+
             <ul className={styles.projetos}>  
 
             {data.map((pro)=>{

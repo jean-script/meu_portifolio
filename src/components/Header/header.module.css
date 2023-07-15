@@ -1,46 +1,101 @@
 
+.header {
+    height: 100vh;
+    width: 270px;
+    background-color: var(--primary-normal);
+    position: fixed;
+    overflow-y: scroll;
 
-.Header{
-    width: 100%;
-    height: 70px;
-    background-color: #0B2435;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: 1px solid #484848;
-    box-shadow:4px 4px 40px rgba(0,0,0,.2);
-    padding: 20px;
+    padding: 18px;
 }
 
-.container{
-    max-width: 1024px;
-    width: 100%;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header::-webkit-scrollbar{
+    width: 5px;
 }
 
-.headerLink {
-    color: #DBDBDB;
-    font-size: 1.2rem;
-    text-decoration: none;
+.header::-webkit-scrollbar-thumb{
+    background-color: var(--primary-black);
+    border-radius: 5px;
+}
+
+.headerContext {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.headerInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.headerInfo h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.headerInfo h2 a {
+    color: var(--write-normal);
+}
+
+.headerInfo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.headerInfo p {
+    font-size: 13px;
+    color: var(--write-normal);
+    text-align: center;
+    line-height: 150%;
+}
+
+.headerIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.headerIcons svg{
+    background-color: var(--write-normal);
+    padding: 7px;
+    border-radius: 50%;
 }
 
 .nav {
+    width: 100%;
+    max-width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav a {
+    width: 100%;
+    max-width: 110px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 300px;
+    gap: 10px;
+    color: var(--write-normal);
+    font-weight: 500;
 }
 
-.link {
-    color: #DBDBDB;
-    font-size: 1.2rem;
+.nav .active {
+    color: var(--primary-black);
 }
 
-@media screen and (max-width:530px) {
-    .nav{
-        justify-content: space-around;
-    }
+.nav span {
+    font-size: 14px;
 }

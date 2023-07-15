@@ -1,63 +1,42 @@
-import Photo from '../../asserts/myphoto.jpg'
 import { Link } from 'react-router-dom';
-
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { HiArrowCircleRight } from 'react-icons/hi';
+import Photo from '../../asserts/myphoto.jpg'
 import styles from './styles.module.css';
 
 function Sobre({ name, faculdade, cargo, universidade, sobre }){
   
     return(
-        <div className={styles.sectionSobre}>
+        <section className={styles.sobreContainer}>
+            <article>
 
-           <article className={styles.sobreContatos}>
-                <div className={styles.photo}>
-                    <img src={Photo} alt="Minha foto perfil"/>
-                </div>
+                <div className={styles.sobreInfos}>
+                    <h1>{name}</h1>
+                    <h3>{cargo}</h3>
 
-                <div className={styles.nome}>
-                    <h3>{name}</h3>
-                </div>
-
-                <div className={styles.contatos}>
-                    <Link to={`https://github.com/jean-script`} target='_blank'>
-                        <AiFillGithub color='#fff' size={50} />
-                    </Link>
-                    <Link to={`https://www.linkedin.com/in/jean-carlos-aires-83a3821a2`} target='_blank'>
-                        <AiFillLinkedin color='#fff' size={50}  />
-                    </Link>
-                </div>
-
-           </article>
-
-           <article className={styles.infor}>
-                <section>
-                    <div className={styles.containerInfo}>
-                        <h3>Formação acadêmica</h3>
-                        <ul>
-                            <li>
-                                {faculdade} - {universidade}
-                            </li>
-                        </ul>
-                    </div>
-                    <div className={styles.containerInfoEmpresa}>
-                        <h3>Experiência</h3>
-                        <p>Cargo Atual: {cargo}</p>
-                        <p>Experiência: Desenvolvedor Front end</p>
-                    </div>
-
-                </section>
-
-                <hr/>
-
-                <section className={styles.sobre}>
-                    <h3>Sobre</h3>
                     <p>
-                        {sobre}
-                    </p>
-                </section>
+                        Sou um desenvolvedor <strong>front-end</strong> para aplicações web complexas e escaláveis. Quer saber como posso ajudar seu projeto? Confira meu <strong>portfólio</strong> de projetos e currículo online.
 
-           </article>
-        </div>
+                    </p>
+
+                    <div>
+                        <Link to="/portifolio">
+                            <HiArrowCircleRight size={24} />
+                            Exibir portifólio
+                        </Link>
+                    </div>
+
+                </div>
+
+                <div className={styles.containerFoto}>
+                    <img
+                        src={Photo}
+                        alt='Foto de perfil'
+                    />
+                </div>
+            </article>
+
+            
+        </section>
     )
 }
 

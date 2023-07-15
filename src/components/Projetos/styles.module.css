@@ -2,7 +2,21 @@
 
 .container {
     width: 100%;
-    padding: 0 25px;
+    padding: 0 25px 30px 25px;
+}
+
+.ProjetoCabecalho {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.barraCor {
+    width: 5px;
+    height: 50px;
+    background-color: var(--primary-normal);
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
 }
 
 .projetos {
@@ -12,20 +26,19 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     list-style: none;
-    margin: 10px auto;
+    margin: 40px auto 10px auto;
 }
 
 .projetos li {
     width: 90%;
     max-width: 400px;
-    border: 1px solid rgba(103, 214, 231, 0.032);
+    border: 1px solid var(--primary-black);
     border-radius: 5px;
 }
 
 .projetos li:hover {
-    box-shadow: 1px 4px 10px rgba(103, 214, 231, 0.263);
-    border: 1px solid rgba(103, 214, 231, 0.263);
-    /* border: 1px solid rgba(103, 214, 231, 0.949); */
+    box-shadow: 1px 4px 10px var(--primary-normal);
+    border: 1px solid var(--primary-black);
 }
 
 

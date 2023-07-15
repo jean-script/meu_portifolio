@@ -1,0 +1,29 @@
+/*---------------------------------------------*/
+
+/*O que faço*/
+
+.Oquefaco {
+    height: 100vh;
+    padding: 60px 34px 0 34px;
+    background-color: #fff;
+}
+
+.facoCabecalho {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.barraCor {
+    width: 5px;
+    height: 50px;
+    background-color: var(--primary-normal);
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+.Oquefaco p {
+    line-height: 150%;
+    color: var(--paragraph-normal);
+    margin-top: 14px;
+}
