@@ -1,7 +1,6 @@
 
 
 .main {
-    width: 100%;
     height: 100vh;
     margin-left: 270px;
 }
@@ -20,7 +19,7 @@
 } 
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:908px) {
     .main {
         margin-left: 0;
     }

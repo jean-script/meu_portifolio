@@ -1,0 +1,140 @@
+
+.header {
+    height: 60px;
+    width: 100%;
+    background-color: var(--primary-normal);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.headerActive{
+    height: 300px;
+    width: 100%;
+    background-color: var(--primary-normal);
+    position: relative;
+    transition: all 0.3s;
+    padding-bottom: 20px;
+    overflow-y: scroll;
+}
+
+.headerActive::-webkit-scrollbar{
+    width: 5px;
+}
+
+.headerActive::-webkit-scrollbar-thumb{
+    background-color: var(--primary-black);
+    border-radius: 5px;
+}
+
+
+.headerActive button {
+
+    width: 50px;
+
+    background: transparent;
+    border: 1px solid var(--write-normal);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top: 10px;
+    left: 20px;
+}
+
+
+.header button {
+
+    width: 50px;
+
+    background: transparent;
+    border: 1px solid var(--write-normal);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.headerContent {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerContent h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--write-normal);
+}
+
+.header .headerInfos {
+    display: none;
+    transition: all 0.3s;
+}
+
+.headerActive .headerInfos {
+    display: flex;
+    transition: all 0.3s;
+}
+
+.headerInfos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.headerIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.headerIcons svg{
+    background-color: var(--write-normal);
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.nav {
+    width: 100%;
+    max-width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav a {
+    width: 100%;
+    max-width: 110px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--write-normal);
+    font-weight: 500;
+}
+
+.nav .active {
+    color: var(--primary-black);
+}
+
+.nav span {
+    font-size: 14px;
+}

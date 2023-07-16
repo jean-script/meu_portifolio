@@ -63,7 +63,7 @@
     line-height: 150%;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:908px) {
     .template {
         flex-direction: column;
         justify-content: center;
