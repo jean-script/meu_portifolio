@@ -97,7 +97,7 @@ p strong {
     }
 
     .sobreInfos {
-        align-items: center;
+        align-items: flex-start;
     }
     
     .sobreContainer article {
