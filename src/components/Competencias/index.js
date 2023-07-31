@@ -1,4 +1,4 @@
-import { SiJavascript, SiNextdotjs, SiTypescript, SiFirebase } from 'react-icons/si'
+import { SiJavascript, SiNextdotjs, SiTypescript, SiFirebase, SiDart, SiFlutter } from 'react-icons/si'
 import { AiFillHtml5 } from 'react-icons/ai';
 import { IoLogoCss3, IoLogoNodejs } from 'react-icons/io';
 import { FaReact, FaPython } from 'react-icons/fa';
@@ -21,6 +21,15 @@ const Competencia = ()=>{
             <div className={styles.tecnologia}>
                 <IoLogoCss3 size={tamanhoIcon} color='#54B689' />
                 <span>CSS3</span>
+            </div>
+
+            <div className={styles.tecnologia}>
+                <SiDart size={tamanhoIcon} color='#54B689'/>
+                <span>Dart</span>
+            </div>
+            <div className={styles.tecnologia}>
+                <SiFlutter size={tamanhoIcon} color='#54B689'/>
+                <span>Flutter</span>
             </div>
 
             <div className={styles.tecnologia}>
@@ -64,7 +73,6 @@ const Competencia = ()=>{
                 <SiFirebase size={tamanhoIcon} color='#54B689'/>
                 <span>Firebase</span>
             </div>
-            
         </article>
     )
 }

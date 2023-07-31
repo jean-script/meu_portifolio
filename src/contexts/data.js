@@ -6,8 +6,44 @@ import skate from '../asserts/redeSocialSkate.png';
 import devBarber from '../asserts/devBarber.png'
 
 export const data = 
-    [
-        {
+    [   
+        { 
+            nome: 'Aplicativo Todo List',
+            descricao: 'Aplicativo feito em flutter, para criar lista de tarefas, pode excluir, desfazer a exclusão',
+            git:'https://github.com/jean-script/to_do_list',
+            image:'https://github.com/jean-script/to_do_list/blob/main/assets/images/appTodoList.PNG?raw=true',
+            tecnologias: ['Dart', 'Flutter'],
+            id: 11,
+            destaque:true
+        },
+        { 
+            nome: 'Aplicativo Buscador de Gifs',
+            descricao: 'Aplicativo feito em flutter, busca os gifs do API GifsDeveloper',
+            git:'https://github.com/jean-script/buscador_gif',
+            image:'https://github.com/jean-script/buscador_gif/blob/main/assets/images/appGif.PNG?raw=true',
+            tecnologias: ['Dart', 'Flutter'],
+            id: 10,
+            destaque:true
+        },
+        { 
+            nome: 'Aplicativo Calculadora IMC',
+            descricao: 'Aplicativo feito em flutter, para você saber seu IMC',
+            git:'https://github.com/jean-script/calcular_imc',
+            image:'https://github.com/jean-script/calcular_imc/blob/main/assets/images/AppIMC.PNG?raw=true',
+            tecnologias: ['Dart', 'Flutter'],
+            id: 9,
+            destaque:true
+        },
+        { 
+            nome: 'Aplicativo Conversor de Moeda',
+            descricao: 'Aplicativo feito em flutter, buscamos os valores atuais do dolar, euro pela API hgbrasil. E podemos colocar o valor e obter a conversão',
+            git:'https://github.com/jean-script/conversor_moeda',
+            image:'https://github.com/jean-script/conversor_moeda/blob/main/assets/images/appDolar.PNG?raw=true',
+            tecnologias: ['Dart', 'Flutter'],
+            id: 8,
+            destaque:true
+        },
+        { 
             nome: 'Sistema de Caixa',
             descricao: 'Sistema de caixa para lanchonete. Contém autenticação, funcionalidades de carinho de compras. Podem criar seus pedidos e enviar para o restaurante que vai ver o pedido no dashboard. Para o restaurante tem uma pagina de analytics.',
             git:'https://github.com/jean-script/lanchonete_praca',
@@ -44,7 +80,7 @@ export const data =
             image:'https://github.com/jean-script/shopping_card/raw/main/src/assets/imgGit.JPG?raw=true',
             link: 'https://shopping-card-cyan.vercel.app/',
             tecnologias: ['ReactJS', 'JavaScript', 'React hooks', 'context Api'],
-            id: 2
+            id: 2,
         },
         {
             nome: 'Lista de tarefas',
@@ -52,7 +88,7 @@ export const data =
             git:'https://github.com/jean-script/ListaDeTarefas',
             image:tarefa,
             tecnologias: ['ReactJS', 'JavaScript', 'Firebase', 'HTML5', 'CSS'],
-            id: 3
+            id: 3,
         },
         {
             nome: 'Dev Barbearia',
@@ -71,7 +107,7 @@ export const data =
             image:'https://github.com/jean-script/ecommerce/blob/main/src/img/localhost_3000_.png?raw=true/1200x500.png?text=#vitrinedev',
             link: 'https://ecommerce-flax-rho.vercel.app/',
             tecnologias: ['ReactJS', 'JavaScript', 'Firebase', 'HTML5', 'CSS','Styles-components', 'EmailJS'],
-            id: 4
+            id: 4,
         },
         
     ]
