@@ -11,8 +11,8 @@ function ProjetosProvider({ children }){
 
     let userInfo ={
         nome:'Jean Carlos Aires',
-        cargo: 'Desenvolvedor RPA',
-        empresa: 'Practia Brasil',
+        cargo: 'Desenvolvedor Front end',
+        empresa: 'Visual Mix',
         faculdade: 'Analise e desenvolvimento de sistemas',
         universidade: 'Uninove',
         sobre: sobreTexto
