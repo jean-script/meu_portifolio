@@ -11,7 +11,7 @@ function ProjetosProvider({ children }){
 
     let userInfo ={
         nome:'Jean Carlos Aires',
-        cargo: 'Desenvolvedor Front end',
+        cargo: 'Desenvolvedor Full Stack',
         empresa: 'Visual Mix',
         faculdade: 'Analise e desenvolvimento de sistemas',
         universidade: 'Uninove',

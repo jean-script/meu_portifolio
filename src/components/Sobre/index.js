@@ -16,7 +16,7 @@ function Sobre({ name, faculdade, cargo, universidade, sobre }) {
                     <p>
                         Sou um desenvolvedor <strong>full stack</strong> para desenvolvimento de Aplicativos,
                         Sistemas WEB e software escaláveis. Quer saber como posso ajudar seu projeto?
-                        Confira meu <strong>portfólio</strong> de projetos e currículo online.
+                        Confira meu <Link to="/portfolio"><strong>portfólio</strong></Link> de projetos e currículo online.
                     </p>
 
                     <div>

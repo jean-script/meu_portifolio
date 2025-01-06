@@ -1,15 +1,31 @@
-
+import { useEffect, useState } from 'react';
 import { FaGithubAlt, FaLinkedin, FaUserAlt, FaTabletAlt } from 'react-icons/fa'
 import MyPhoto from '../../asserts/myphoto.jpg'
 import styles from './header.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
-export default function Header(){
+export default function Header() {
 
+    const local = useLocation();
+
+    const [current, setCurrent] = useState('/');
+
+    useEffect(() => {
+        function changepathRoute() {
+            console.log(local.pathname);
+            if (local.pathname === '/') {
+                setCurrent(local.pathname);
+            } else if (local.pathname === '/portfolio') {
+                setCurrent(local.pathname);
+            }
+        }
+
+        changepathRoute();
+    }, [local.pathname]);
     let tamanhoIcon = 35;
 
-    return(
+    return (
 
         <header className={styles.header}>
             <div className={styles.headerContext}>
@@ -20,7 +36,7 @@ export default function Header(){
                             Jean Carlos
                         </Link>
                     </h2>
-                    <img 
+                    <img
                         src={MyPhoto}
                         alt='Minha foto de perfil'
                     />
@@ -37,12 +53,12 @@ export default function Header(){
                 </div>
 
                 <nav className={styles.nav}>
-                    <Link to='/' className={styles.active}>
-                        <FaUserAlt size={16} color='#1b4934' />
+                    <Link to='/' className={current === '/' ? styles.active : null}>
+                        <FaUserAlt size={16} color={current === '/' ? '#1b4934' : '#fff'} />
                         <span>Sobre mim</span>
                     </Link>
-                    <Link to='/portfolio'>
-                        <FaTabletAlt size={16} color='#fff' />
+                    <Link to='/portfolio' className={current !== '/' ? styles.active : null}>
+                        <FaTabletAlt size={16} color={current !== '/' ? '#1b4934' : '#fff'} />
                         <span>Portfólio</span>
                     </Link>
                 </nav>
