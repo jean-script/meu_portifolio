@@ -3,9 +3,9 @@ import { HiArrowCircleRight } from 'react-icons/hi';
 import Photo from '../../asserts/myphoto.jpg'
 import styles from './styles.module.css';
 
-function Sobre({ name, faculdade, cargo, universidade, sobre }){
-  
-    return(
+function Sobre({ name, faculdade, cargo, universidade, sobre }) {
+
+    return (
         <section className={styles.sobreContainer}>
             <article>
 
@@ -14,8 +14,9 @@ function Sobre({ name, faculdade, cargo, universidade, sobre }){
                     <h3>{cargo}</h3>
 
                     <p>
-                        Sou um desenvolvedor <strong>front-end</strong> para aplicações web complexas e escaláveis. Quer saber como posso ajudar seu projeto? Confira meu <strong>portfólio</strong> de projetos e currículo online.
-
+                        Sou um desenvolvedor <strong>full stack</strong> para desenvolvimento de Aplicativos,
+                        Sistemas WEB e software escaláveis. Quer saber como posso ajudar seu projeto?
+                        Confira meu <strong>portfólio</strong> de projetos e currículo online.
                     </p>
 
                     <div>
@@ -35,7 +36,7 @@ function Sobre({ name, faculdade, cargo, universidade, sobre }){
                 </div>
             </article>
 
-            
+
         </section>
     )
 }

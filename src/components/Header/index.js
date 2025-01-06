@@ -24,7 +24,7 @@ export default function Header(){
                         src={MyPhoto}
                         alt='Minha foto de perfil'
                     />
-                    <p>Olá, meu nome é Jean Carlos e sou desenvolvedor front end. Bem vindo ao meu site pessoal!</p>
+                    <p>Olá, meu nome é Jean Carlos e sou desenvolvedor full stack. Bem vindo ao meu site pessoal!</p>
 
                     <div className={styles.headerIcons}>
                         <a href='https://github.com/jean-script' target='_blank' rel="noreferrer">

@@ -13,8 +13,7 @@ import { Link } from "react-router-dom";
 import { HiArrowCircleRight } from "react-icons/hi";
 
 function Home(){
-
-
+    
     const { userInfo } = useContext(ProjetosContext);
     const { data } = useContext(ProjetosContext);
     let projetosDestaque = data.filter((pro)=> pro.destaque === true);

@@ -1,4 +1,4 @@
-import { SiJavascript, SiNextdotjs, SiTypescript, SiFirebase, SiDart, SiFlutter } from 'react-icons/si'
+import { SiJavascript, SiNextdotjs, SiTypescript, SiFirebase, SiDart, SiFlutter, SiTailwindcss } from 'react-icons/si'
 import { AiFillHtml5 } from 'react-icons/ai';
 import { IoLogoCss3, IoLogoNodejs } from 'react-icons/io';
 import { FaReact, FaPython } from 'react-icons/fa';
@@ -7,12 +7,42 @@ import { GrMysql } from 'react-icons/gr'
 
 import styles from './styles.module.css';
 
-const Competencia = ()=>{
+const Competencia = () => {
 
     let tamanhoIcon = 100;
-    return(
+    return (
         <article className={styles.container} >
-            
+
+            <div className={styles.tecnologia}>
+                <FaReact size={tamanhoIcon} color='#54B689' />
+                <span>ReactJS</span>
+            </div>
+
+            <div className={styles.tecnologia}>
+                <SiNextdotjs size={tamanhoIcon} color='#54B689' />
+                <span>NextJS</span>
+            </div>
+
+            <div className={styles.tecnologia}>
+                <SiTailwindcss size={tamanhoIcon} color='#54B689' />
+                <span>Tailwindcss</span>
+            </div>
+
+            <div className={styles.tecnologia}>
+                <IoLogoNodejs size={tamanhoIcon} color='#54B689' />
+                <span>NodeJs</span>
+            </div>
+
+            <div className={styles.tecnologia}>
+                <SiJavascript size={tamanhoIcon} color='#54B689' />
+                <span>JavaScript</span>
+            </div>
+
+            <div className={styles.tecnologia}>
+                <SiTypescript size={tamanhoIcon} color='#54B689' />
+                <span>TypeScript</span>
+            </div>
+
             <div className={styles.tecnologia}>
                 <AiFillHtml5 size={tamanhoIcon} color='#54B689' />
                 <span>HTML5</span>
@@ -24,53 +54,31 @@ const Competencia = ()=>{
             </div>
 
             <div className={styles.tecnologia}>
-                <SiDart size={tamanhoIcon} color='#54B689'/>
+                <SiDart size={tamanhoIcon} color='#54B689' />
                 <span>Dart</span>
             </div>
             <div className={styles.tecnologia}>
-                <SiFlutter size={tamanhoIcon} color='#54B689'/>
+                <SiFlutter size={tamanhoIcon} color='#54B689' />
                 <span>Flutter</span>
             </div>
 
             <div className={styles.tecnologia}>
-                <SiSass size={tamanhoIcon} color='#54B689'/>
+                <SiSass size={tamanhoIcon} color='#54B689' />
                 <span>Sass</span>
             </div>
 
             <div className={styles.tecnologia}>
-                <SiJavascript size={tamanhoIcon} color='#54B689' />
-                <span>JavaScript</span>
-            </div>
-
-            <div className={styles.tecnologia}>
-                <SiTypescript size={tamanhoIcon} color='#54B689'/>
-                <span>TypeScript</span>
-            </div>
-
-            <div className={styles.tecnologia}>
-                <FaReact size={tamanhoIcon} color='#54B689' />
-                <span>ReactJS</span>
-            </div>
-
-
-            <div className={styles.tecnologia}>
-                <SiNextdotjs size={tamanhoIcon} color='#54B689' />
-                <span>NextJS</span>
-            </div>
-            <div className={styles.tecnologia}>
-                <IoLogoNodejs size={tamanhoIcon} color='#54B689' />
-                <span>NodeJs</span>
-            </div>
-            <div className={styles.tecnologia}>
                 <FaPython size={tamanhoIcon} />
                 <span>Python</span>
             </div>
+
             <div className={styles.tecnologia}>
-                <GrMysql size={tamanhoIcon} color='#54B689'/>
+                <GrMysql size={tamanhoIcon} color='#54B689' />
                 <span>MySql</span>
             </div>
+
             <div className={styles.tecnologia}>
-                <SiFirebase size={tamanhoIcon} color='#54B689'/>
+                <SiFirebase size={tamanhoIcon} color='#54B689' />
                 <span>Firebase</span>
             </div>
         </article>

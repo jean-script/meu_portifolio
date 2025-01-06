@@ -2,8 +2,8 @@ import styles from './styles.module.css'
 
 import Competencia from '../Competencias'
 
-export default function OqueFaco(){
-    return(
+export default function OqueFaco() {
+    return (
         <section className={styles.Oquefaco}>
             <div className={styles.facoCabecalho}>
                 <div className={styles.barraCor}></div>
@@ -11,13 +11,13 @@ export default function OqueFaco(){
             </div>
 
             <p>
-                Tenho mais de 2 anos de experiência na área da programação 
-                <strong> Web</strong> e <strong>RPA</strong>. Abaixo está 
-                uma rápida visão geral dos meus principais conjuntos de 
+                Tenho mais de 3 anos de experiência na área da programação
+                <strong> Web</strong>, <strong> aplicativos</strong> e <strong>RPA</strong>. Abaixo está
+                uma rápida visão geral dos meus principais conjuntos de
                 habilidades técnicas e tecnologias que uso.
             </p>
             <div>
-                <Competencia/>
+                <Competencia />
             </div>
 
         </section>
